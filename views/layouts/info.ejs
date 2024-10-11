@@ -14,29 +14,7 @@
 
 <div id="trigger-point">
 
-<header>
-
-<h1 id="logo"><a href="index"><img src="../images/logo.png" alt="東京横浜サンプル医院"></a></h1>
-
-<div class="banner">
-<a href="#"><img src="../images/banner1.jpg" alt=""></a>
-</div>
-
-<address>
-<div class="tel">03-0000-0000</div>
-<span class="small">受付時間：AM9:00〜PM7:00</span>
-</address>
-
-<!--文字サイズ変更ボタン-->
-<div id="f-size">
-<p>文字サイズ</p>
-<ul>
-<li id="f-small"></li>
-<li id="f-large"></li>
-</ul>
-</div>
-
-</header>
+	<%- include('../partials/headersub.ejs') %>
 
 </div>
 <!--/#trigger-point-->
@@ -54,7 +32,7 @@
 	<li><a href="/info/#link3"><%= title[2] %></a></li>
 	</ul>
 </li>
-<li><a href="/service/1">診療科目<span>Medical Service</span></a>
+<li><a href="/service">診療科目<span>Medical Service</span></a>
 	<ul>
 	<li><a href="/service/2">一般内科</a></li>
 	<li><a href="/service/3">小児科</a></li>
@@ -109,25 +87,25 @@
 <h3>メニュータイトル</h3>
 <ul class="submenu">
 <li><a href="../">ホーム</a></li>
-<li><a href="/info/1"><%= title[0] %></a>
+<li><a href="/info"><%= title[0] %></a>
 	<ul>
-	<li><a href="/info/1"><%= title[0] %>/a></li>
-	<li><a href="/info/2"><%= title[1] %></a></li>
-	<li><a href="/info/3"><%= title[2] %></a></li>
+		<li><a href="info#link1">当院について</a></li>
+		<li><a href="info#link2">初診の方へ</a></li>
+		<li><a href="info#link3">院長挨拶</a></li>
 	</ul>
 </li>
-<li><a href="/service/1">診療科目</a>
+<li><a href="/service">診療科目</a>
 	<ul>
-	<li><a href="/service/2">一般内科</a></li>
-	<li><a href="/service/3">小児科</a></li>
-	<li><a href="/service/4">皮膚科</a></li>
+	<li><a href="/service2/1">一般内科</a></li>
+	<li><a href="/service2/2">小児科</a></li>
+	<li><a href="/service2/3">皮膚科</a></li>
 	</ul>
 </li>
-<li><a href="staff">スタッフ紹介</a></li>
-<li><a href="faq">よく頂く質問</a></li>
-<li><a href="access">アクセス</a></li>
-<li><a href="recruit">採用情報</a></li>
-<li><a href="contact">お問い合わせ</a></li>
+<li><a href="/staff">スタッフ紹介</a></li>
+<li><a href="/faq">よく頂く質問</a></li>
+<li><a href="/access">アクセス</a></li>
+<li><a href="/recruit">採用情報</a></li>
+<li><a href="/contact">お問い合わせ</a></li>
 </ul>
 </nav>
 

@@ -5,7 +5,7 @@
 <title>病院・歯科医院（クリニック）サイト向け 無料ホームページテンプレート tp_clinic6</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
 
 <header>
 
-<h1 id="logo"><a href="../"><img src="../images/logo.png" alt="東京横浜サンプル医院"></a></h1>
+<h1 id="logo"><a href="/"><img src="images/logo.png" alt="東京横浜サンプル医院"></a></h1>
 
 <div class="banner">
-<a href="#"><img src="../images/banner1.jpg" alt=""></a>
+<a href="#"><img src="images/banner1.jpg" alt=""></a>
 </div>
 
 <address>
@@ -46,19 +46,19 @@
 
 <nav>
 <ul>
-<li><a href="../">ホーム<span>Home</span></a></li>
-<li><a href="/info/">当院について<span>Information</span></a>
+<li><a href="/">ホーム<span>Home</span></a></li>
+<li><a href="info">当院について<span>Information</span></a>
 	<ul>
-	<li><a href="/info/1"><%= title %></a></li>
-	<li><a href="/info/2"><%= title %></a></li>
-	<li><a href="/info/3"><%= title %></a></li>
+	<li><a href="info#link1">当院について</a></li>
+	<li><a href="info#link2">初診の方へ</a></li>
+	<li><a href="info#link3">院長挨拶</a></li>
 	</ul>
 </li>
 <li><a href="service">診療科目<span>Medical Service</span></a>
 	<ul>
-	<li><a href="service2">一般内科</a></li>
-	<li><a href="service2">小児科</a></li>
-	<li><a href="service2">皮膚科</a></li>
+	<li><a href="service2/1">一般内科</a></li>
+	<li><a href="service2/2">小児科</a></li>
+	<li><a href="service2/3">皮膚科</a></li>
 	</ul>
 </li>
 <li><a href="staff">スタッフ紹介<span>Staff</span></a></li>
@@ -76,27 +76,104 @@
 
 <div class="main-contents">
 
-<section id="link1" class="blur">
+<section class="blur">
 
-<h2><span class="uline"><%= title %></span><span class="small">Information</span></h2>
-<p><img src="../images/1.jpg" alt=""></p>
-<p>ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。</p>
+<h2><span class="uline">診療科目のご案内</span><span class="small">Information</span></h2>
+
+<div class="list-grid1">
+
+<div class="list">
+<figure><img src="images/sample1.jpg" alt=""></figure>
+<div class="text">
+<h4>一般内科</h4>
+<p>風邪、インフルエンザ、高血圧、糖尿病などの診療を行います。</p>
+</div>
+<p class="btn"><a href="service2/1">詳しくみる</a></p>
+</div>
+
+<div class="list">
+<figure><img src="images/sample2.jpg" alt=""></figure>
+<div class="text">
+<h4>小児科</h4>
+<p>子どもの健康管理、予防接種、成長発達のチェックを行います。</p>
+</div>
+<p class="btn"><a href="service2/2">詳しくみる</a></p>
+</div>
+
+<div class="list">
+<figure><img src="images/sample3.jpg" alt=""></figure>
+<div class="text">
+<h4>皮膚科</h4>
+<p>皮膚の健康問題、湿疹、にきび、アレルギーなどを診療します。</p>
+</div>
+<p class="btn"><a href="service2/3">詳しくみる</a></p>
+</div>
+
+</div>
+<!--/.list-grid1-->
 
 </section>
 
-<section id="link2" class="blur">
+<section class="blur">
 
-<h2 class="c">初診の方へ<span class="small">For First-Time Patients</span></h2>
-<p><img src="../images/sample1.jpg" alt=""></p>
-<p>ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。</p>
+<h2 class="c">一般内科<span class="small">General Medicine</span></h2>
+
+<div class="list-half">
+
+<div class="text">
+<p>これは画像をそのまま出すタイプです。影の部分はimg要素につけている<span class="look">class=&quot;<span class="color-check">shadow1</span>&quot;</span>です。<br>
+このclassがなければ画像だけが出力されます。</p>
+</div>
+
+<div class="image">
+<img src="images/sample1.jpg" alt="" class="shadow1">
+</div>
+
+</div>
+<!--/.list-half-->
 
 </section>
 
-<section id="link3" class="blur">
+<section class="blur">
 
-<h2 class="c">院長挨拶<span class="small">Greetings from the Director</span></h2>
-<p><img src="../images/2.jpg" alt=""></p>
-<p>ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。</p>
+<h2 class="c">小児科<span class="small">Pediatrics</span></h2>
+
+<div class="list-half reverse">
+
+<div class="text">
+<p>左右の配置を入れ替えたタイプです。<br>
+これは外側のボックスの、<br>
+<span class="look">&lt;div class=&quot;list-half&gt;</span><br>
+を<br>
+<span class="look">&lt;div class=&quot;list-half <span class="color-check">reverse</span>&quot;&gt;</span><br>
+とすれば入れ替わります。お好みで使い分けて下さい。</p>
+</div>
+
+<div class="image">
+<img src="images/sample2.jpg" alt="" class="shadow1">
+</div>
+
+</div>
+<!--/.list-half-->
+
+</section>
+
+<section class="blur">
+
+<h2 class="c">皮膚科<span class="small">Dermatology</span></h2>
+
+<div class="list-half">
+
+<div class="text">
+<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+</div>
+
+<div class="image">
+<img src="images/sample3.jpg" alt="" class="shadow1">
+</div>
+
+</div>
+<!--/.list-half-->
 
 </section>
 
@@ -108,7 +185,7 @@
 <nav>
 <h3>メニュータイトル</h3>
 <ul class="submenu">
-<li><a href="index">ホーム</a></li>
+<li><a href="/">ホーム</a></li>
 <li><a href="info">当院について</a>
 	<ul>
 	<li><a href="info#link1">当院について</a></li>
@@ -118,9 +195,9 @@
 </li>
 <li><a href="service">診療科目</a>
 	<ul>
-	<li><a href="service2">一般内科</a></li>
-	<li><a href="service2">小児科</a></li>
-	<li><a href="service2">皮膚科</a></li>
+	<li><a href="service2/1">一般内科</a></li>
+	<li><a href="service2/2">小児科</a></li>
+	<li><a href="service2/3">皮膚科</a></li>
 	</ul>
 </li>
 <li><a href="staff">スタッフ紹介</a></li>
@@ -240,7 +317,7 @@
 <!--/#footermenu-->
 
 <footer>
-<small>Copyright&copy; <a href="index">東京横浜サンプル医院</a> All Rights Reserved.</small>
+<small>Copyright&copy; <a href="">東京横浜サンプル医院</a> All Rights Reserved.</small>
 <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
@@ -258,18 +335,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!--文字サイズチェンジ用のスクリプト-->
-<script src="../js/fontSizeChanger.js"></script>
+<script src="js/fontSizeChanger.js"></script>
 
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/slick.js"></script>
+<script src="js/slick.js"></script>
 
 <!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="../js/jquery.inview_set.js"></script>
+<script src="js/jquery.inview_set.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

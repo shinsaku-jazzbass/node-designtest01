@@ -13,26 +13,20 @@ const fs = require("fs");
 //     });
 // });
 
-var titlearr = ['診療科目','一般内科','小児科','皮膚科']
+//var titlearr = ['診療科目','一般内科','小児科','皮膚科']
 
 router.get("", (req, res) => {
-    res.render('service', {
-        layout: './layouts/service',
+    res.render('staff', {
+        layout: './layouts/staff',
     })
 })
 
 router.get("/:id", (req, res) => {
     var id = req.params.id;
-    if(id>=1 && id<=3){
-        console.log(id);
-        res.render('service2',{
-            title: `Service page${titlearr[id-1]}`,
-            layout: './layouts/subservice2',
-        });
-    } else {
-        res.sendStatus(404);
-    }
-
+    res.render('staff',{
+        title: '',
+        layout: './layouts/staff',
+    });
 })
 
 module.exports = router;

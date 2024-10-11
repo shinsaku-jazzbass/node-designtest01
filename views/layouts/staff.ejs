@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>病院・歯科医院（クリニック）サイト向け 無料ホームページテンプレート tp_clinic6</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" href="../css/style.css">
+<meta name="description" content="ここにサイト説明">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
 
 <header>
 
-<h1 id="logo"><a href="../"><img src="../images/logo.png" alt="東京横浜サンプル医院"></a></h1>
+<h1 id="logo"><a href="index"><img src="images/logo.png" alt="東京横浜サンプル医院"></a></h1>
 
 <div class="banner">
-<a href="#"><img src="../images/banner1.jpg" alt=""></a>
+<a href="#"><img src="images/banner1.jpg" alt=""></a>
 </div>
 
 <address>
@@ -46,12 +46,12 @@
 
 <nav>
 <ul>
-<li><a href="../">ホーム<span>Home</span></a></li>
-<li><a href="/info/">当院について<span>Information</span></a>
+<li><a href="index">ホーム<span>Home</span></a></li>
+<li><a href="info">当院について<span>Information</span></a>
 	<ul>
-	<li><a href="/info/1"><%= title %></a></li>
-	<li><a href="/info/2"><%= title %></a></li>
-	<li><a href="/info/3"><%= title %></a></li>
+	<li><a href="info#link1">当院について</a></li>
+	<li><a href="info#link2">初診の方へ</a></li>
+	<li><a href="info#link3">院長挨拶</a></li>
 	</ul>
 </li>
 <li><a href="service">診療科目<span>Medical Service</span></a>
@@ -76,27 +76,48 @@
 
 <div class="main-contents">
 
-<section id="link1" class="blur">
+<section>
 
-<h2><span class="uline"><%= title %></span><span class="small">Information</span></h2>
-<p><img src="../images/1.jpg" alt=""></p>
-<p>ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。ここにクリニックの説明を入れます。サンプルテキスト。</p>
+<h2 class="c">スタッフ紹介<span class="small">Staff</span></h2>
 
-</section>
+<div class="list-half mb30" id="nihon">
 
-<section id="link2" class="blur">
+<div class="text">
+<h3>日本太郎</h3>
+<p>簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。</p>
+</div>
+<div class="image">
+<img src="images/2.jpg" alt="">
+</div>
 
-<h2 class="c">初診の方へ<span class="small">For First-Time Patients</span></h2>
-<p><img src="../images/sample1.jpg" alt=""></p>
-<p>ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。ここに初診の方への説明を入れます。サンプルテキスト。</p>
+</div>
+<!--/.list-half-->
 
-</section>
+<div class="list-half mb30">
 
-<section id="link3" class="blur">
+<div class="text" id="okinawa">
+<h3>沖縄次郎</h3>
+<p>簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。</p>
+</div>
+<div class="image">
+<img src="images/2.jpg" alt="">
+</div>
 
-<h2 class="c">院長挨拶<span class="small">Greetings from the Director</span></h2>
-<p><img src="../images/2.jpg" alt=""></p>
-<p>ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。ここに院長挨拶を入れます。サンプルテキスト。</p>
+</div>
+<!--/.list-half-->
+
+<div class="list-half mb30" id="tokyo">
+
+<div class="text">
+<h3>東京花子</h3>
+<p>簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。</p>
+</div>
+<div class="image">
+<img src="images/2.jpg" alt="">
+</div>
+
+</div>
+<!--/.list-half-->
 
 </section>
 
@@ -240,7 +261,7 @@
 <!--/#footermenu-->
 
 <footer>
-<small>Copyright&copy; <a href="index">東京横浜サンプル医院</a> All Rights Reserved.</small>
+<small>Copyright&copy; <a href="index.html">東京横浜サンプル医院</a> All Rights Reserved.</small>
 <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
@@ -258,18 +279,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!--文字サイズチェンジ用のスクリプト-->
-<script src="../js/fontSizeChanger.js"></script>
+<script src="js/fontSizeChanger.js"></script>
 
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/slick.js"></script>
+<script src="js/slick.js"></script>
 
 <!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="../js/jquery.inview_set.js"></script>
+<script src="js/jquery.inview_set.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
