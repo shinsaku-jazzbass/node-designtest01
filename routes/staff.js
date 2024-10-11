@@ -13,10 +13,11 @@ const fs = require("fs");
 //     });
 // });
 
-//var titlearr = ['診療科目','一般内科','小児科','皮膚科']
+var staffarr = ['小林新作','工藤和基地','南山冬馬','田中太朗']
 
 router.get("", (req, res) => {
     res.render('staff', {
+        staffname: staffarr,
         layout: './layouts/staff',
     })
 })

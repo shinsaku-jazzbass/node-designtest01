@@ -80,10 +80,12 @@
 
 <h2 class="c">スタッフ紹介<span class="small">Staff</span></h2>
 
+<% var ary = ['アイテム1', 'アイテム2', 'アイテム3']; %>
+<% staffname.forEach(function (value, key) { %>
 <div class="list-half mb30" id="nihon">
 
 <div class="text">
-<h3>日本太郎</h3>
+<h3><%= value %></h3>
 <p>簡単なコメントを書きます。サンプルテキスト。簡単なコメントを書きます。サンプルテキスト。</p>
 </div>
 <div class="image">
@@ -91,6 +93,7 @@
 </div>
 
 </div>
+<% }); %>
 <!--/.list-half-->
 
 <div class="list-half mb30">
